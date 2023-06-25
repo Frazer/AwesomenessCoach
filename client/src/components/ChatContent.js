@@ -103,7 +103,10 @@ function groupByUserAndShortTime(chatMessages) {
 
   for (let i = 1; i < chatMessages.length; i++) {
     // Create new group
-    if (chatMessages[i].time - chatMessages[i - 1].time > timeGap) {
+    if (
+      chatMessages[i].time - chatMessages[i - 1].time > timeGap ||
+      chatMessages[i].senderId !== chatMessages[i - 1].senderId
+    ) {
       groups.push(currGroup);
       currGroup = {
         senderId: chatMessages[i].senderId,

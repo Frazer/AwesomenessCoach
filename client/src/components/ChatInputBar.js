@@ -23,8 +23,9 @@ function ChatInputBar({ senderId, receiverId }) {
     axios
       .post(`${serverUrl}/generate-text`, { message: chatTextInput })
       .then((response) => {
-        // Handle the successful response
-        console.log(response.data.text);
+        dispatch(
+          sendChatMessage(receiverId, senderId, "text", response.data.text)
+        );
       })
       .catch((error) => {
         // Handle any errors
