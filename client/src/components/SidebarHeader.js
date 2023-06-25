@@ -7,12 +7,12 @@ function SidebarHeader() {
   return (
     <Fragment>
       <div className="sidebar-header">
-        <ProfilePic url={ temp_profile_pic } marginRight="0.6rem" size="small" />
-        <h2>CloverChat</h2>
-        <div className="header-icon-container">
+        <ProfilePic url={temp_profile_pic} marginRight="0.6rem" size="small" />
+        <h2>Awesome You</h2>
+        {/* <div className="header-icon-container">
           <i className="action-btn-icon fas fa-user-plus"></i>
-        </div>
-      </div >
+        </div> */}
+      </div>
       <hr className="sidebar-hr" />
     </Fragment>
   );

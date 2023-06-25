@@ -5,15 +5,16 @@ import PropTypes from "prop-types";
 function ChatWindowHeader({ chatee }) {
   return (
     <div className="chatwindow-header">
-      <ProfilePic url={ chatee.profileUrl } marginRight="0.5rem" size="medium" />
-      <b>{ chatee.firstName } { chatee.lastName }</b>
-      <div className="header-icon-container">
+      <ProfilePic url={chatee.profileUrl} marginRight="0.5rem" size="medium" />
+      <b>
+        {chatee.firstName} {chatee.lastName}
+      </b>
+      {/* <div className="header-icon-container">
         <i className="fas fa-palette clickable"></i>
-      </div>
+      </div> */}
     </div>
   );
 }
-
 
 ChatWindowHeader.propTypes = {
   chatee: PropTypes.shape(User),
