@@ -15,19 +15,21 @@ function ChatMessageGroup({ messageGroup, userInfoMap }) {
   if (senderId === userId) {
     return (
       <div className="message-group by-user">
-        { messages.map(messageRenderer) }
+        {messages.map(messageRenderer)}
       </div>
     );
   }
 
+  let newsenderId = "zen_master";
   return (
     <div className="message-group by-chatee">
       <div className="chatee-message-profile-container">
-        <ProfilePic url={ userInfoMap[senderId].profileUrl } size="even_smaller" />
+        <ProfilePic
+          url={userInfoMap[newsenderId].profileUrl}
+          size="even_smaller"
+        />
       </div>
-      <div className="chatee-messages">
-        { messages.map(messageRenderer) }
-      </div>
+      <div className="chatee-messages">{messages.map(messageRenderer)}</div>
     </div>
   );
 }
@@ -36,8 +38,8 @@ function getMessageRenderer() {
   return (chatMessage) => {
     if (chatMessage.type === "text") {
       return (
-        <div className="text-bubble" key={ chatMessage.id }>
-          { chatMessage.content }
+        <div className="text-bubble" key={chatMessage.id}>
+          {chatMessage.content}
         </div>
       );
     } else {
