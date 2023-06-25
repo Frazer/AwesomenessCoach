@@ -1,2 +1,4 @@
 AwesomeCoach-token.json
 client/node_modules
+server/myenv
+.DS_Store

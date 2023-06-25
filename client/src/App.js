@@ -8,14 +8,39 @@ import profilePic3 from "./static/temp_profile3.jpg";
 import profilePic4 from "./static/temp_profile4.jpg";
 import profilePic5 from "./static/temp_profile5.jpg";
 
+// eslint-disable-next-line no-undef
+window.AwesomeCoach = {
+  CHAT_SERVER_URL: "http://localhost:5000",
+};
+
 function App() {
   let { chateeUserId } = useParams();
   // TODO replace with real data
   const friendList = [
-    { id: "john_doe", profileUrl: profilePic2, firstName: "John", lastName: "Doe" },
-    { id: "max_curie", profileUrl: profilePic3, firstName: "Max", lastName: "Curie" },
-    { id: "elon_musk", profileUrl: profilePic4, firstName: "Elon", lastName: "Musk" },
-    { id: "munch_munch", profileUrl: profilePic5, firstName: "Munch", lastName: "Munch" },
+    {
+      id: "john_doe",
+      profileUrl: profilePic2,
+      firstName: "John",
+      lastName: "Doe",
+    },
+    {
+      id: "max_curie",
+      profileUrl: profilePic3,
+      firstName: "Max",
+      lastName: "Curie",
+    },
+    {
+      id: "elon_musk",
+      profileUrl: profilePic4,
+      firstName: "Elon",
+      lastName: "Musk",
+    },
+    {
+      id: "munch_munch",
+      profileUrl: profilePic5,
+      firstName: "Munch",
+      lastName: "Munch",
+    },
   ];
 
   let currChateeData = null;
@@ -27,7 +52,7 @@ function App() {
   }
   // No Chatee chosen, redirect to most recent conversation
   else if (chateeUserId == null) {
-    fallback = <Redirect to={ `/${friendList[0].id}` } />;
+    fallback = <Redirect to={`/${friendList[0].id}`} />;
   }
   // A chatee is chosen
   else {
@@ -36,16 +61,19 @@ function App() {
       currChateeData = filtered[0];
     } else {
       // The chatee is not a friend of this user. Redirect to a friend
-      fallback = <Redirect to={ `/${friendList[0].id}` } />;
+      fallback = <Redirect to={`/${friendList[0].id}`} />;
     }
   }
 
   return (
     <div className="App">
-      <Sidebar friendList={ friendList } />
-      { currChateeData == null ? fallback : <ChatWindow chatee={ currChateeData } /> }
+      <Sidebar friendList={friendList} />
+      {currChateeData == null ? (
+        fallback
+      ) : (
+        <ChatWindow chatee={currChateeData} />
+      )}
     </div>
-
   );
 }
 
