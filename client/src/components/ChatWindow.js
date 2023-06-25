@@ -8,6 +8,9 @@ import { useSelector } from "react-redux";
 
 import temp_profile1 from "../static/temp_profile1.jpg";
 import temp_profile2 from "../static/temp_profile2.jpg";
+import temp_profile3 from "../static/temp_profile3.jpg";
+import temp_profile4 from "../static/temp_profile4.jpg";
+import temp_profile5 from "../static/temp_profile5.jpg";
 
 function ChatWindow({ chatee }) {
   const chatHistory = useSelector((state) => state.chatMessages);
@@ -18,6 +21,15 @@ function ChatWindow({ chatee }) {
     },
     jenny: {
       profileUrl: temp_profile1,
+    },
+    super_hero: {
+      profileUrl: temp_profile3,
+    },
+    elon_musk: {
+      profileUrl: temp_profile4,
+    },
+    mahatma_gandhi: {
+      profileUrl: temp_profile5,
     },
   };
   return (

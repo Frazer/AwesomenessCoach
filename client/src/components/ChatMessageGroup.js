@@ -20,12 +20,11 @@ function ChatMessageGroup({ messageGroup, userInfoMap }) {
     );
   }
 
-  let newsenderId = "zen_master";
   return (
     <div className="message-group by-chatee">
       <div className="chatee-message-profile-container">
         <ProfilePic
-          url={userInfoMap[newsenderId].profileUrl}
+          url={userInfoMap[senderId].profileUrl}
           size="even_smaller"
         />
       </div>
