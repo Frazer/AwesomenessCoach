@@ -1,5 +1,6 @@
 AwesomeCoach-token.json
 client/node_modules
+client/.eslintcache
 server/myenv
 .DS_Store
 server/.env

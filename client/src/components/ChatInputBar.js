@@ -19,8 +19,7 @@ function ChatInputBar({ senderId, receiverId }) {
   }
 
   const sendMessage = () => {
-    // eslint-disable-next-line no-undef
-    const serverUrl = window.AwesomeCoach.CHAT_SERVER_URL;
+    const serverUrl = global.awesomeCoachConfig.CHAT_SERVER_URL;
     axios
       .post(`${serverUrl}/generate-text`, { message: chatTextInput })
       .then((response) => {

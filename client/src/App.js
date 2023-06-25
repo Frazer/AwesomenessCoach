@@ -8,11 +8,6 @@ import profilePic3 from "./static/temp_profile3.jpg";
 import profilePic4 from "./static/temp_profile4.jpg";
 import profilePic5 from "./static/temp_profile5.jpg";
 
-// eslint-disable-next-line no-undef
-window.AwesomeCoach = {
-  CHAT_SERVER_URL: "http://localhost:5000",
-};
-
 function App() {
   let { chateeUserId } = useParams();
   // TODO replace with real data
