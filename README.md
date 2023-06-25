@@ -22,11 +22,11 @@ Our UI is very nice.  This was baased on Clover Chat, previously built by our te
 
 
 # What's next for Awesomeness coach
-## Integrate the vector database to create more inspired prompts, 
-train multiple personalities and perspectives
-## Improve the social aspect
-## Add voice to the coaches respones
-## Have the coach check in at different intervals to feel like a friend who is thinking of you.
-## Add recorded exercises, like relaxation and mindfulness practices
-## Have insspirations meme generation
-## Combine this with our VR avatars, so that people can haang out with the coaches in VR
+ Integrate the vector database to create more inspired prompts, 
+  train multiple personalities and perspectives
+ Improve the social aspect
+ Add voice to the coaches respones
+ Have the coach check in at different intervals to feel like a friend who is thinking of you.
+ Add recorded exercises, like relaxation and mindfulness practices
+ Have insspirations meme generation
+ Combine this with our VR avatars, so that people can haang out with the coaches in VR
