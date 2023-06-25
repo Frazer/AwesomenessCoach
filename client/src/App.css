@@ -2,9 +2,12 @@
   --light-grey: rgb(236, 236, 236);
   --grey: rgb(209, 209, 209);
   --black: #2f2f2f;
-  --custom-color: rgb(178, 154, 247);
+  --custom-color: rgb(243, 249, 252);
   --text-grey: #949494;
-  --text-bubble-grey: rgb(230, 230, 230);
+  --text-white: white;
+  --text-dark-blue: #1e3c77;
+  --light-teal: #b0dad7;
+  --text-bubble-blue: #08b7ab;
   --text-bubble-big-radius: 1.25rem;
   --text-bubble-small-radius: 0.25rem;
 }
@@ -13,13 +16,21 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
+  background: radial-gradient(circle at left -10% top 0%, #c2e8ff, transparent),
+    radial-gradient(circle at left 110% top 80%, #cafccc, transparent),
+    radial-gradient(circle at left 50% top 80%, #ffffff, #ffffff);
 }
 
 .clickable {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 

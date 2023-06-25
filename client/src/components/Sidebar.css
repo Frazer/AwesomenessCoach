@@ -36,8 +36,9 @@
   cursor: pointer;
 }
 
-.sidebar-chatee:hover, .sidebar-chatee.active {
-  background-color: var(--light-grey);
+.sidebar-chatee:hover,
+.sidebar-chatee.active {
+  background-color: var(--light-teal);
 }
 
 .profile-pic {

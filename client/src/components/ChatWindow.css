@@ -77,7 +77,8 @@
 
 .by-user .text-bubble {
   background-color: var(--custom-color);
-  color: white;
+  color: var(--text-dark-blue);
+  box-shadow: 0 0 3px rgb(190, 191, 213);
   border-top-right-radius: var(--text-bubble-small-radius);
   border-bottom-right-radius: var(--text-bubble-small-radius);
 }
@@ -91,7 +92,8 @@
 }
 
 .by-chatee .text-bubble {
-  background-color: var(--text-bubble-grey);
+  background-color: var(--text-bubble-blue);
+  color: var(--text-white);
   border-top-left-radius: var(--text-bubble-small-radius);
   border-bottom-left-radius: var(--text-bubble-small-radius);
 }
@@ -120,13 +122,13 @@
 }
 
 .chat-input-container i {
-  color: var(--custom-color);
+  color: var(--text-bubble-blue);
   font-size: 1.3rem;
   margin: 0 0.6rem;
 }
 
 .chat-text-input {
-  background-color: var(--light-grey);
+  background-color: white;
   padding: 0.5rem 0.7rem;
   border: none;
   font-size: 1rem;
