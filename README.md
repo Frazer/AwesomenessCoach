@@ -1,7 +1,7 @@
 # AwesomenessCoach
 Helping you be more awesome
 
-![Awesome Coach Screenshot](./AwesomeCoachScreenshot.jpg)
+![Awesome Coach Screenshot](./AwesomeCoachScreenshot.png)
 
 #Inspiration
 Human mind is the most underutilized resources in the world and learning how to program my brains directly can bring us peace and joy beyond what most people know is possible.
