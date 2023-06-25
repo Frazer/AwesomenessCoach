@@ -13,16 +13,16 @@ function App() {
   // TODO replace with real data
   const friendList = [
     {
-      id: "super_hero",
-      profileUrl: profilePic2,
-      firstName: "Super",
-      lastName: "Hero",
-    },
-    {
       id: "zen_master",
-      profileUrl: profilePic3,
+      profileUrl: profilePic2,
       firstName: "Frazer",
       lastName: "Kirkman",
+    },
+    {
+      id: "super_hero",
+      profileUrl: profilePic3,
+      firstName: "Super",
+      lastName: "Hero",
     },
     {
       id: "elon_musk",

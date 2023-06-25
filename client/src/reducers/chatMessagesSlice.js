@@ -6,9 +6,9 @@ export const chatMessagesSlice = createSlice({
     {
       id: "1",
       time: 1611092188,
-      senderId: "john_doe",
+      senderId: "zen_master",
       type: "text",
-      content: "Hello World!",
+      content: "Hi.  Great to have you here.",
     },
     {
       id: "2",
@@ -22,22 +22,22 @@ export const chatMessagesSlice = createSlice({
       time: 1611096652,
       senderId: "jenny",
       type: "text",
-      content: "and sed do eiusmod tempor incididunt",
+      content: "and I'm excited to be here",
     },
     {
       id: "5",
       time: 1611096659,
       senderId: "jenny",
       type: "text",
-      content: "but tempor incididunt",
+      content: "but I'm having these issues",
     },
     {
       id: "7",
       time: 1611165731,
-      senderId: "john_doe",
+      senderId: "zen_master",
       type: "text",
       content:
-        "Lorem ipsum dolor sit amet,  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint  deserunt mollit anim id est laborum.",
+        "I'm sorry to hear that you're going through a difficult time. Remember that you're not alone, and reaching out for support is an important step.",
     },
   ],
   reducers: {
