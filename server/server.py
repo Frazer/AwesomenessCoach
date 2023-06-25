@@ -101,19 +101,16 @@ def generate_text():
     POWER_LEVEL = 10
 
     # # Make the API call
-    # response = openai.ChatCompletion.create(
-    #     model=openai_chat_models[POWER_LEVEL],
-    #     max_tokens=100,
-    #     messages=[
-    #     {"role": "system", "content": "You are a helpful life coach who values mindfulness and mental rehearsal."},
-    #     {"role": "user", "content": prompt}
-    # ]
+    response = openai.ChatCompletion.create(
+        model=openai_chat_models[POWER_LEVEL],
+        max_tokens=100,
+        messages=[
+            {"role": "system", "content": "You are a helpful life coach who values mindfulness and mental rehearsal."},
+            {"role": "user", "content": prompt}
+        ]
+    )
 
-    # )
-
-    # print (response)
-    return jsonify({'text': "Coach responds with YAY!"})
-    # return jsonify({'text': response.choices[0].text.strip()})
+    return jsonify({'text': response.choices[0].message.content.strip()})
 
 if __name__ == '__main__':
     app.run()
