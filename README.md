@@ -25,6 +25,8 @@ Our UI is very nice.  This was baased on Clover Chat, previously built by our te
 * Integrate the vector database to create more inspired prompts,
   train multiple personalities and perspectives
 * Improve the social aspect
+* Add tracking of improvements, and data visualizations with goal lines
+* Have certain skills to be learned, to gamify practicing certain skills
 * Add voice to the coaches respones
 * Have the coach check in at different intervals to feel like a friend who is thinking of you.
 * Add recorded exercises, like relaxation and mindfulness practices
